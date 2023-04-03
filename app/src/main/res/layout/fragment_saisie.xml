@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SaisieFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="42dp"
+            android:gravity="center"
+            android:text="Formulaire Inscription"
+            android:textColor="#000000"
+            android:textSize="24sp" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/editTextNom"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Nom"
+            android:minHeight="48dp"
+            android:paddingBottom="8dp" />
+
+        <EditText
+            android:id="@+id/editTextPrenom"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Prénom"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextDateNaissance"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Date de naissance"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextNumeroTelephone"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Numéro de téléphone"
+            tools:ignore="TouchTargetSizeCheck,TouchTargetSizeCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTextAdresseMail"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:hint="Adresse mail"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="Centres d'intérêt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/checkBoxSport"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sport" />
+
+            <CheckBox
+                android:id="@+id/checkBoxMusique"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Musique" />
+
+            <CheckBox
+                android:id="@+id/checkBoxLecture"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lecture" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+
+        <Button
+            android:id="@+id/buttonSoumettre"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Valider" />
+
+            <Space
+                android:layout_width="18dp"
+                android:layout_height="80dp" />
+
+        <Button
+            android:id="@+id/buttonTelecharger"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Telecharger" />
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="69dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:gravity="center"
+                android:text="Affichage"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="325dp" />
+
+    </LinearLayout>
+    </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
